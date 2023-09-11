@@ -19,24 +19,48 @@ const GallerySlider = ({ images }) => {
   }
 
   return (
-    <div className="gallery-slider">
-      <button className="arrow left-arrow" onClick={handleLeftClick}>
-        &lt;
-      </button>
-      {images.map((image, index) => (
-        <div className="images">
-          <img
-            key={index}
-            src={image}
-            alt={`Image ${index}`}
-            className={index === currentIndex ? 'active' : ''}
-          />
+    <div style={{ display: 'flex' }}>
+      <div className="gallery-slider">
+        {images.map((image, index) => (
+          <div className="images">
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${index}`}
+              className={index === currentIndex ? 'active' : ''}
+            />
+          </div>
+        ))}
+      </div>
+      <div
+        style={{
+          display: 'grid',
+          maxWidth: '300px',
+          alignItems: 'center',
+          position: 'absolute',
+          gridTemplateColumns: '10px 1fr 10px',
+        }}
+      >
+        <button
+          className="arrow left-arrow"
+          onClick={handleLeftClick}
+          style={{ width: '10px' }}
+        >
+          &lt;
+        </button>
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+          <h4>sallam</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            eaque, atque blanditiis iure unde incidunt eius explicabo quo,
+            nesciunt porro iusto ipsam repellat nihil temporibus omnis corporis
+            aliquid vero natus.
+          </p>
         </div>
-      ))}
-
-      <button className="arrow right-arrow" onClick={handleRightClick}>
-        &gt;
-      </button>
+        <button className="arrow right-arrow" onClick={handleRightClick}>
+          &gt;
+        </button>
+      </div>
     </div>
   )
 }

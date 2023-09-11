@@ -9,9 +9,38 @@ import Table from './containers/Table/Table'
 import { data, viewData } from './utils/data'
 import GallerySlider from './components/Slide/GallerySlider'
 const images = [
-  'https://picsum.photos/id/1018/1000/600/',
-  'https://picsum.photos/id/1015/1000/600/',
-  'https://picsum.photos/id/1019/1000/600/',
+  'https://picsum.photos/id/1014/600/600/',
+  'https://picsum.photos/id/1018/600/600/',
+  'https://picsum.photos/id/1015/600/600/',
+  'https://picsum.photos/id/1021/600/600/',
+  'https://picsum.photos/id/1019/600/600/',
+]
+const slideImages = [
+  {
+    image: 'https://picsum.photos/id/1020/600/600/',
+    title: 'Image 1',
+    description: 'this is image 1 description about',
+  },
+  {
+    image: 'https://picsum.photos/id/1014/600/600/',
+    title: 'Image 2',
+    description: 'this is image 2 description about',
+  },
+  {
+    image: 'https://picsum.photos/id/1018/600/600/',
+    title: 'Image 3',
+    description: 'this is image 3 description about',
+  },
+  {
+    image: 'https://picsum.photos/id/1015/600/600/',
+    title: 'Image 4',
+    description: 'this is image 4 description about',
+  },
+  {
+    image: 'https://picsum.photos/id/1019/600/600/',
+    title: 'Image 5',
+    description: 'this is image 5 description about',
+  },
 ]
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
