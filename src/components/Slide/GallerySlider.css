@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+
   height: 300px;
 }
 
@@ -24,6 +25,8 @@
   overflow: hidden;
   /* make this image have a slop degree */
   transform: rotate(-45deg);
+  margin-inline: -75px;
+  transition: all 0.3s ease;
 }
 
 img {
@@ -41,4 +44,5 @@ img {
 /*  images has img.active */
 .images:has(img.active) {
   height: 50%;
+  margin-inline: -15px;
 }
