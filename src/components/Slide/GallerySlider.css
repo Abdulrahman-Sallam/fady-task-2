@@ -1,0 +1,44 @@
+/* GallerySlider.css */
+
+.gallery-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.arrow {
+  font-size: 30px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  overflow: hidden;
+  /* make this image have a slop degree */
+  transform: rotate(-45deg);
+}
+
+img {
+  flex: 0 0 auto;
+  height: 150px;
+  margin: 0 5px;
+  transition: height 0.3s ease;
+  transform: rotate(45deg);
+}
+
+/* img.active {
+  height: 250px;
+} */
+
+/*  images has img.active */
+.images:has(img.active) {
+  height: 50%;
+}

@@ -1,0 +1,43 @@
+.grid-table-row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Set the minimum width of each cell to 150px */
+  grid-gap: 1px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.grid-table-row:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.grid-table-row:hover {
+  background-color: #e0e0e0;
+}
+
+.icon {
+  font-size: 24px; /* Increase the font size to make the icon bigger */
+  cursor: pointer;
+  margin-inline-end: 10px;
+}
+
+.delete {
+  color: crimson;
+}
+
+.edit {
+  color: #2196f3;
+}
+
+/* icon hover change opacity */
+.icon:hover {
+  opacity: 0.7;
+  background-color: lightgreen;
+  border-radius: 50%;
+}

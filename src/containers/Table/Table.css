@@ -1,0 +1,42 @@
+.grid-table {
+  display: grid;
+  grid-gap: 1px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: inter, sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+}
+
+.grid-table-header {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+  color: #333;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Set the minimum width of each cell to 150px */
+  grid-gap: 1px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.grid-table-header-cell {
+  padding: 10px;
+  text-align: left;
+  overflow-wrap: break-word; /* Allow long cell contents to wrap */
+}
